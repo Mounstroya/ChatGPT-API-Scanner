@@ -10,6 +10,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 import rich
 from selenium import webdriver
+import undetected_chromedriver as uc
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
@@ -63,7 +64,7 @@ class APIKeyLeakageScanner:
         options.add_argument("--ignore-certificate-errors")
         options.add_argument("--ignore-ssl-errors")
 
-        self.driver = webdriver.Chrome(options=options)
+        self.driver = uc.Chrome(options=options)
         self.driver.implicitly_wait(3)
 
         self.cookies = CookieManager(self.driver)
