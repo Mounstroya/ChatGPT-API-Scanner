@@ -8,3 +8,4 @@ rich>=13.0.0
 pylint>=3.0.0
 flake8>=7.0.0
 ruff>=0.2.0setuptools
+undetected-chromedriver
