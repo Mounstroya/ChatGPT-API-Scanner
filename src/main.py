@@ -60,7 +60,7 @@ class APIKeyLeakageScanner:
         """
         rich.print("🌍 Opening Chrome ...")
 
-        options = webdriver.ChromeOptions()
+        options = uc.ChromeOptions()
         options.add_argument("--ignore-certificate-errors")
         options.add_argument("--ignore-ssl-errors")
 
