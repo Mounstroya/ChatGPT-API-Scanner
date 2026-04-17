@@ -58,7 +58,7 @@ class APIKeyLeakageScanner:
         """
         Login to GitHub
         """
-        rich.print("🌍 Opening Chrome ...")
+        rich.print("🌍 Opening undetected Chrome ...")
 
         options = uc.ChromeOptions()
         options.add_argument("--ignore-certificate-errors")
